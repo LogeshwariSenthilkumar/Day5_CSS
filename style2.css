@@ -1,0 +1,42 @@
+.one{
+    height: 175px;
+    background-color: greenyellow;
+}
+.two{
+    display: flex;
+}
+.two1{
+    background-color: aquamarine;
+    height: 175px;
+    width: 100%;
+    margin: 5px;
+}
+.three{
+   display: flex;
+   flex-wrap: wrap;
+}
+.three1{
+    height: 175px;
+    background-color: lightgray;
+    flex-basis: 23%;
+    flex-grow: 1;
+    margin: 5px;
+}
+@media screen and (max-width:600px) {
+    .two{
+        flex-direction: column;
+    }
+    .three1{
+        flex-basis: 47%;
+    }
+    
+}
+@media screen and (max-width:400px) {
+    .two{
+        flex-direction: column;
+    }
+    .three1{
+        flex-basis: 100%;
+    }
+    
+}
